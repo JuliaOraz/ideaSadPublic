@@ -1,0 +1,142 @@
+.section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section--dark{
+    background-color: $sectionDarkBg;
+}
+.section--ligth{
+    background-color: $sectionLightBg;
+}
+.section--indent{
+    margin-top: -150px;
+}
+
+.section__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &--centred{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.section__title{
+    font-weight: 700;
+    font-size: 22px;
+
+    & span{
+        color: $accentDarkTxt;
+    }
+
+    @include tab {
+        font-size: 28px;
+    }
+}
+.section__nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.section__link{
+    display: none;
+    height: 43px;
+    margin-left: 16px;
+    padding: 12px 23px;
+    background-color: $lightBtnBg;
+    border-radius: 30px;
+    color: $accentDarkTxt;
+    font-weight: 500;
+    transition: background-color 250ms $trans, color 250ms $trans;
+
+    &:hover{
+        background-color: $accentDarkBg;
+        color: $primaryLightTxt;
+    }
+
+    @include tab{
+        display: block;
+    }
+}
+
+.section__link--mob{
+    display: inline-block;
+    margin-left: 0;
+}
+
+.section__footer{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+        @include tab {
+            display: none;
+        }
+}
+
+.section__link_icon{
+    width: 21px;
+    height: 12px;
+    fill: $accentDarkIco;
+    transition: fill 250ms $trans;
+
+    .section__link:hover &{
+        fill: $primaryIco;
+    }
+
+}
+.section__btn_group {
+    display: flex;
+    align-items: center;
+}
+.section__btn{
+    width: 36px;
+    height: 44px;
+    background-color: $lightBtnBg;
+    
+    padding: 13px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 250ms $trans;
+    
+    &:hover {
+        background-color: $accentDarkBg;
+    }
+
+    @include tab {
+        width: 43px;
+        border-radius: 100%;
+    }
+}
+.section__btn--prev{
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+
+    @include tab{
+        margin-right: 8px;
+    }
+    
+}
+.section__btn--next{
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+
+    @include tab {
+        margin-left: 8px;
+    }
+}
+.section__btn_icon{
+    width: 15px;
+    height: 17px;
+    stroke: $accentDarkIco;
+    transition: stroke 250ms $trans;
+    
+    .section__btn:hover &{
+        stroke: $primaryIco;
+    }
+}

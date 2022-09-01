@@ -1,0 +1,80 @@
+.main_about{
+    
+   
+
+    @include tab{
+        display: flex;
+        background-color: $primaryBg;
+        border-radius: 25px;
+        padding: 25px;
+    }
+}
+.main_about__img{
+    margin-bottom: 15px;
+
+    & img{
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    @include tab {
+        flex-basis: 34%;
+        margin-right: 36px;
+        margin-bottom: 0;
+    }
+}
+.main_about__box{
+        flex-basis: calc(66% - 36px);
+}
+.main_about__txt{
+    height: 160px;
+    overflow: hidden;
+    font-weight: 500;  
+    color: $secondaryTxt; 
+    margin-bottom: 24px;
+    position: relative;
+    line-height: 1.19;
+
+    &::after{
+        content: '';
+        position: absolute;
+        box-shadow: inset 0 -8px 5px 0px #f1f0ef;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+    }
+
+    @include tab{
+        &::after {
+            box-shadow: inset 0 -8px 5px 0px #ffffff;
+        }
+    }
+        
+}
+.main_about__btn {
+    background-color: $seclightBtnBg;
+    border-radius: 30px;
+    font-weight: 500;
+    color: $accentDarkTxt;
+    padding: 12px 20px;
+    transition: background-color 250ms $trans, color 250ms $trans;
+
+    &:hover,
+    &:focus {
+        background-color: $accentDarkBg;
+        color: $primaryLightTxt;
+    }
+}
+
+.main_about__arrow {
+    width: 21px;
+    height: 12px;
+    fill: $accentDarkIco;
+    transition: fill 250ms $trans;
+
+    .main_about__btn:hover &,
+    .main_about__btn:focus & {
+        fill: $primaryIco;
+    }
+}

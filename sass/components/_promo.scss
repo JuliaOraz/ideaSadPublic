@@ -1,0 +1,102 @@
+.promo{
+    
+
+    @include tab{
+        display: flex;
+        align-items: stretch;
+    }
+}
+.promo__sidebar_menu{
+    
+    width: 100%;
+    
+    background: $primaryBg;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    overflow: hidden;
+
+    @include tab {
+        max-width: calc(25% - 15px);
+        margin-right: 10px;
+    }
+}
+.promo__list{
+    height: 383px;
+    overflow: hidden;
+}
+.promo__item{
+    border-bottom: 1px solid $lightBord;
+
+    // &:hover{
+    //     background-color: #333;
+    // }
+}
+.promo__link{
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+.promo__img{
+    width: 100%;
+    max-width: 35px;
+    padding: 5px;
+    height: 35px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: $primaryBg;      
+
+    & img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+.promo__box{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo__category{
+    color: $primaryTxt;
+}
+.promo__icon{
+    width: 16px;
+    height: 13px;
+    stroke: $accentDarkIco;
+}
+
+.promo__footer{
+    padding: 22px 0;
+    text-align: center;
+}
+.promo__btn{
+    padding: 9px 30px;
+    background: $lightBtnBg;
+    border-radius: 30px;
+    font-weight: 500;
+    color: $accentDarkTxt;
+    transition: background 250ms $trans, color 250ms $trans;
+
+    &:hover,&:focus{
+      background: $darkBtnBg;
+      color: $primaryLightTxt;
+    }
+}
+
+.promo__slider {
+    display: none;
+
+    @include desk{
+        display: block;
+        max-width: calc(75% - 5px);
+        width: 100%;
+        background-color: #fff;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+}

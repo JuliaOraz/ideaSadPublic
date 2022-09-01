@@ -1,0 +1,43 @@
+.advantage{
+    
+
+    @include tab {
+        display: flex;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: 30px;
+    }
+}
+.advantage__box{
+    flex-basis: calc((100% - 240px) / 4);
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+    @include tab{
+        margin-bottom: 0;
+    }
+}
+
+.advantage__icon{
+    stroke: $accentDarkIco;
+    margin-bottom: 10px;
+
+
+    &--garant {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.advantage__title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.advantage__desk{
+    font-weight: 500;
+    color: $secondaryTxt;
+}
+

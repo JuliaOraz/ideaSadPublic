@@ -1,0 +1,35 @@
+.features {
+    width: 100%;
+    position: relative;
+}
+
+.features__item {
+    font-size: 14px;
+    color: $secondaryTxt;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px dotted $darkBord;
+        width: 100%;
+        bottom: 4px;
+    }
+}
+
+.features__name {
+    background-color: $primaryBg;
+    z-index: 1;
+    margin-right: 10px;
+    // max-width: 65%;
+}
+
+.features__value {
+    background-color: $primaryBg;
+    z-index: 1;
+    // max-width: 35%;
+}

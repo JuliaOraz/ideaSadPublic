@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Sad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header>
+      <div class="head_top">
+        <div class="container">
+          <nav class="head_top__nav">
+            <a class="head_top__link" href="">Идея Сад</a>
+            <a class="head_top__link" href="">Полезная информация</a>
+            <a class="head_top__link" href="">Оплата и Доставка</a>
+            <a class="head_top__link" href="">Акционные товары</a>
+            <a class="head_top__link" href="">Хиты продаж</a>
+            <a class="head_top__link" href="">Новости</a>
+            <a class="head_top__link" href="">Контакты</a>
+            <a class="head_top__link" href="">Гарантии</a>
+          </nav>
+        </div>
+      </div>
+      <div class="head">
+        <div class="container">
+          <div class="head__holder">
+            <div class="head__logo">
+              <a class="logo" href="http://" aria-label="IdeaSad">
+                <svg class="logo__icon head__logo_icon">
+                  <use href="./img/icons.svg#icon_logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="head__wrap">
+              <div class="head__box">
+                <svg class="head__icon head__icon--schedule">
+                  <use href="./img/icons.svg#icon_schedule"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Режим работы:</span>
+                  <div class="head__content">
+                    <span>Пн-Пт:</span>9<sup>00</sup> - 18<sup>00</sup>
+                  </div>
+                </div>
+              </div>
+              <div class="head__box head__box--phone">
+                <svg class="head__icon head__icon--phone">
+                  <use href="./img/icons.svg#icon_phone"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Поддержка клиентов:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="tel:+380683546433">
+                      +38 068 354 64 33
+                      <svg class="head__content_icon">
+                        <use href="./img/icons.svg#icon_arrow-b"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="head__box">
+                <svg class="head__icon head__icon--lang">
+                  <use href="./img/icons.svg#icon_lang"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Язык:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="">
+                      UA
+                      <svg class="head__content_icon">
+                        <use href="./img/icons.svg#icon_arrow-b"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="head__box head__box--hidden_mob">
+                <svg class="head__icon head__icon--user">
+                  <use href="./img/icons.svg#icon_user"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Кабинет:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="">Вход</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn head__btn">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      <div class="head_bottom">
+        <div class="container">
+          <div class="head_bottom__holder">
+            <a href="" class="head_bottom__menu">
+              <svg class="head_bottom__icon_menu">
+                <use
+                  class="head_bottom__icon_mob_menu"
+                  href="./img/icons.svg#icon_menu-mob"
+                ></use>
+                <use
+                  class="head_bottom__icon_desk_menu"
+                  href="./img/icons.svg#icon_menu"
+                ></use>
+              </svg>
+              <span class="head_bottom__menu_title">Каталог товаров</span>
+              <svg class="head_bottom__arrow head_bottom__arrow--menu">
+                <use href="./img/icons.svg#icon_arrow-r"></use>
+              </svg>
+            </a>
+            <form class="head_bottom__search" action="">
+              <div class="search">
+                <input
+                  class="search__input"
+                  type="search"
+                  name="keyword"
+                  placeholder="Поиск товаров"
+                />
+                <button class="search__btn" type="submit" name="search">
+                  <svg class="search__icon">
+                    <use href="./img/icons.svg#icon_search"></use>
+                  </svg>
+                  <span class="search__find">Найти</span>
+                </button>
+              </div>
+            </form>
+            <a href="1" class="head_bottom__favorites">
+              <svg class="head_bottom__icon head_bottom__icon--favorites">
+                <use href="./img/icons.svg#icon_like"></use>
+              </svg>
+              <span class="head_bottom__amount head_bottom__amount--favorites"
+                >0</span
+              >
+            </a>
+            <a href="" class="head_bottom__cart">
+              <svg class="head_bottom__icon head_bottom__icon--cart">
+                <use href="./img/icons.svg#icon_cart"></use>
+              </svg>
+              <span class="head_bottom__amount head_bottom__amount--cart"
+                >0</span
+              >
+              <div class="head_bottom__inner">
+                <div class="head_bottom__caption">Корзина</div>
+                <span class="head_bottom__total">0.0 грн</span>
+                <svg class="head_bottom__arrow head_bottom__arrow--cart">
+                  <use href="./img/icons.svg#icon_arrow-r"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Cлайдер и меню -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="promo">
+            <div class="promo__sidebar_menu">
+              <ul class="promo__list">
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category"
+                        >Саженцы плодовых деревьев</span
+                      >
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category">Саженцы деревьев</span>
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category">Саженцы плодовых</span>
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category">Саженцы плодовых</span>
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category">Саженцы плодовых</span>
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="http://">
+                    <div class="promo__img">
+                      <img src="./img/sd_menu.png" alt="" />
+                    </div>
+                    <div class="promo__box">
+                      <span class="promo__category"
+                        >Саженцы плодовых деревьев</span
+                      >
+                      <svg class="promo__icon">
+                        <use href="./img/icons.svg#icon_arrow-r"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="promo__footer">
+                <a class="promo__btn" href="">Открыть все</a>
+              </div>
+            </div>
+            <div class="promo__slider"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Акционные товары -->
+      <section class="section section--ligth">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Акционные товары</h2>
+            <div class="section__nav">
+              <div class="section__btn_group">
+                <div
+                  class="section__btn section__btn--prev js__swiperProd_1--prev"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-l"></use>
+                  </svg>
+                </div>
+                <div
+                  class="section__btn section__btn--next js__swiperProd_1--next"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-r"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="section__link" href="">
+                Смотреть все
+                <svg class="section__link_icon">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="main_products">
+            <div class="swiper main_product__swiper js__swiperProd_1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div
+                          class="product_short__price product_short__price--info"
+                        >
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name">Висота дерева </span>
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                              <div class="price price--old">
+                                <div class="price__value">160</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща) дерева
+                              </span>
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div
+                          class="product_short__price product_short__price--info"
+                        >
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">135</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">13900</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща) дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Плодовые деревья -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Плодовые деревья</h2>
+            <div class="section__nav">
+              <div class="section__btn_group">
+                <div
+                  class="section__btn section__btn--prev js__swiperProd_2--prev"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-l"></use>
+                  </svg>
+                </div>
+                <div
+                  class="section__btn section__btn--next js__swiperProd_2--next"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-r"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="section__link" href="">
+                Смотреть все
+                <svg class="section__link_icon">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="main_products">
+            <div class="swiper js__swiperProd_2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div
+                          class="product_short__price product_short__price--info"
+                        >
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name">Висота дерева </span>
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                              <div class="price price--old">
+                                <div class="price__value">160</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща) дерева
+                              </span>
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div
+                          class="product_short__price product_short__price--info"
+                        >
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short product_short--full">
+                    <a class="product_short__img" href="">
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div class="product_short__like_icons">
+                        <svg>
+                          <use
+                            class="product_short__like"
+                            href="./img/icons.svg#icon_like"
+                          ></use>
+                          <use
+                            class="product_short__like_check"
+                            href="./img/icons.svg#icon_like-check"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="product_short__sale_box">
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                        <div class="product_short__timer">
+                          Действует до
+                          <span>10:09:2022</span>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body">
+                      <div class="product_short__article">
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a href="" class="product_short__name"
+                        >Кизильник Даммера Майор/ Dammeri Major (горшок 2 л)
+                      </a>
+                      <div class="product_short__box">
+                        <div class="product_short__rating">
+                          <div class="rating"></div>
+                        </div>
+                        <a href="" class="product_short__reviews">
+                          <svg>
+                            <use href="./img/icons.svg#icon_comment"></use>
+                          </svg>
+                          0 отзывов
+                        </a>
+                      </div>
+                      <div class="product_short__box">
+                        <div class="product_short__price">
+                          <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">135</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__price_current">
+                            <div class="price">
+                              <div class="price__value">13900</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div class="product_short__info">
+                            При заказе от 10шт скидка на данный товар
+                            <span>20%</span>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="product_short__more">
+                        <div class="product_short__features">
+                          <div class="features">
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Коренева система</span
+                              >
+                              <span class="features__value">Закрита</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Морозостійкість</span
+                              >
+                              <span class="features__value">Висока</span>
+                            </div>
+                            <div class="features__item">
+                              <span class="features__name"
+                                >Висота дерева (куща) дерева (куща)</span
+                              >
+                              <span class="features__value">0,1-0,2 м</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="product_short__link" href="">Открыть все</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Видеообзоры -->
+      <section class="section section--ligth">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Видеообзоры</h2>
+            <div class="section__nav">
+              <div class="section__btn_group">
+                <div
+                  class="section__btn section__btn--prev js__swiperVideo--prev"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-l"></use>
+                  </svg>
+                </div>
+                <div
+                  class="section__btn section__btn--next js__swiperVideo--next"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-r"></use>
+                  </svg>
+                </div>
+              </div>
+              <a class="section__link" href="">
+                Смотреть все
+                <svg class="section__link_icon">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="main_video">
+            <div class="swiper js__swiperVideo">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main_video__wrap">
+                    <div class="main_video__iframe">
+                      <iframe
+                        loading="lazy"
+                        title="Розсадник та інтернет магазин саджанців Ідея Сад"
+                        src="https://www.youtube.com/embed/8pkfYcC3wcE"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="allowfullscreen"
+                      ></iframe>
+                    </div>
+                    <div class="main_video__inner">
+                      <a href="" class="main_video__name"
+                        >Розсадник та інтернет магазин саджанців Ідея Сад</a
+                      >
+                      <div class="main_video__box">
+                        <div class="main_video__date">
+                          <svg class="main_video__icon">
+                            <use href="./img/icons.svg#icon_calendar"></use>
+                          </svg>
+                          <span>28.07.22</span>
+                        </div>
+                        <a href="" class="main_video__btn">
+                          Подробней
+                          <svg class="main_video__arrow">
+                            <use href="./img/icons.svg#icon_arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main_video__wrap">
+                    <div class="main_video__iframe">
+                      <iframe
+                        title="Розсадник та інтернет магазин саджанців Ідея Сад"
+                        src="https://www.youtube.com/embed/8pkfYcC3wcE"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="allowfullscreen"
+                      ></iframe>
+                    </div>
+                    <div class="main_video__inner">
+                      <a href="" class="main_video__name"
+                        >Розсадник та інтернет магазин саджанців Ідея Сад</a
+                      >
+                      <div class="main_video__box">
+                        <div class="main_video__date">
+                          <svg class="main_video__icon">
+                            <use href="./img/icons.svg#icon_calendar"></use>
+                          </svg>
+                          <span>28.07.22</span>
+                        </div>
+                        <a href="" class="main_video__btn">
+                          Подробней
+                          <svg class="main_video__arrow">
+                            <use href="./img/icons.svg#icon_arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main_video__wrap">
+                    <div class="main_video__iframe">
+                      <iframe
+                        title="Розсадник та інтернет магазин саджанців Ідея Сад"
+                        src="https://www.youtube.com/embed/8pkfYcC3wcE"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="allowfullscreen"
+                      ></iframe>
+                    </div>
+                    <div class="main_video__inner">
+                      <a href="" class="main_video__name"
+                        >Розсадник та інтернет магазин саджанців Ідея Сад</a
+                      >
+                      <div class="main_video__box">
+                        <div class="main_video__date">
+                          <svg class="main_video__icon">
+                            <use href="./img/icons.svg#icon_calendar"></use>
+                          </svg>
+                          <span>28.07.22</span>
+                        </div>
+                        <a href="" class="main_video__btn">
+                          Подробней
+                          <svg class="main_video__arrow">
+                            <use href="./img/icons.svg#icon_arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main_video__wrap">
+                    <div class="main_video__iframe">
+                      <iframe
+                        title="Розсадник та інтернет магазин саджанців Ідея Сад"
+                        src="https://www.youtube.com/embed/8pkfYcC3wcE"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="allowfullscreen"
+                      ></iframe>
+                    </div>
+                    <div class="main_video__inner">
+                      <a href="" class="main_video__name"
+                        >Розсадник та інтернет магазин саджанців Ідея Сад</a
+                      >
+                      <div class="main_video__box">
+                        <div class="main_video__date">
+                          <svg class="main_video__icon">
+                            <use href="./img/icons.svg#icon_calendar"></use>
+                          </svg>
+                          <span>28.07.22</span>
+                        </div>
+                        <a href="" class="main_video__btn">
+                          Подробней
+                          <svg class="main_video__arrow">
+                            <use href="./img/icons.svg#icon_arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <a class="section__link section__link--mob" href="">
+                Смотреть все
+                <svg class="section__link_icon">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Просмотренные товары -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Товары, которые вы смотрели</h2>
+            <div class="section__nav">
+              <div class="section__btn_group">
+                <div
+                  class="section__btn section__btn--prev js__swiperProd_3--prev"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-l"></use>
+                  </svg>
+                </div>
+                <div
+                  class="section__btn section__btn--next js__swiperProd_3--next"
+                >
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-r"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_products">
+            <div class="swiper main_product__swiper js__swiperProd_3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <div
+                            class="product_short__price_from product_short__price_from--ind"
+                          >
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <!-- <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <div
+                            class="product_short__price_from product_short__price_from--ind"
+                          >
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <!-- <div class="product_short__price_from">
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив"
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <!-- <div class="product_short__price_from">
+                              <div class="price price--from">
+                                <div class="price__txt">от</div>
+                                <div class="price__value">35</div>
+                                <div class="price__sign">грн</div>
+                              </div>
+                            </div> -->
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product_short">
+                    <a
+                      class="product_short__img product_short__img--ind"
+                      href=""
+                    >
+                      <img
+                        srcset="./img/prod-1x.png 1x, ./img/prod-2x.png 2x"
+                        src="./img/prod-1x.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                      <div
+                        class="product_short__sale_box product_short__sale_box--ind"
+                      >
+                        <div class="product_short__sale">
+                          <span>20%</span>скидка
+                        </div>
+                      </div>
+                    </a>
+                    <div class="product_short__body product_short__body--ind">
+                      <div
+                        class="product_short__article product_short__article--ind"
+                      >
+                        Код товара: ВЕ6065445
+                      </div>
+                      <a
+                        href=""
+                        class="product_short__name product_short__name--ind"
+                        >Яблоня "Белый налив" (ранний срок созревания) Яблоня
+                        "Белый налив" (ранний срок созревания)
+                      </a>
+                      <div
+                        class="product_short__box product_short__box--limiter product_short__box--ind"
+                      >
+                        <div class="product_short__price">
+                          <!-- <div class="product_short__price_old">
+                            <div class="price price--old">
+                              <div class="price__value">160</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div> -->
+                          <div
+                            class="product_short__price_from product_short__price_from--ind"
+                          >
+                            <div class="price price--from">
+                              <div class="price__txt">от</div>
+                              <div class="price__value">35</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                          <div
+                            class="product_short__price_current product_short__price_current--ind"
+                          >
+                            <div class="price">
+                              <div class="price__value">139</div>
+                              <div class="price__sign">грн</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="product_short__cart_btn"
+                          name="addCart"
+                          aria-label="Cart"
+                        >
+                          <svg>
+                            <use href="./img/icons.svg#icon_cart"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Полезная информация -->
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Полезная информация</h2>
+            <div class="section__nav">
+              <!-- <div class="section__btn_group">
+                <div class="section__btn section__btn--prev js__articles--prev">
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-l"></use>
+                  </svg>
+                </div>
+                <div class="section__btn section__btn--next js__articles--next">
+                  <svg class="section__btn_icon">
+                    <use href="./img/icons.svg#icon_arrow-r"></use>
+                  </svg>
+                </div>
+              </div> -->
+              <a class="section__link" href="">
+                Смотреть все
+                <svg class="section__link_icon">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="main_articles">
+            <!-- <div class="swiper js__articles"> -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="main_articles__wrap">
+              <div class="main_articles__img">
+                <img src="./img/artic.png" alt="" loading="lazy" />
+              </div>
+              <div class="main_articles__init">
+                <h3 class="main_articles__name">
+                  Топ 10 растений для живой изгороди для живой изгороди
+                </h3>
+                <div class="main_articles__date">
+                  <svg class="main_articles__icon">
+                    <use href="./img/icons.svg#icon_calendar"></use>
+                  </svg>
+                  <span>28.07.22</span>
+                </div>
+                <div class="main_articles__text">
+                  В представленном обзоре постараемся дать описание тому, что
+                  такое живая изгородь, используя подборку самых эффектных
+                  растений.
+                </div>
+                <a href="" class="main_articles__btn">
+                  Подробней
+                  <svg class="main_articles__arrow">
+                    <use href="./img/icons.svg#icon_arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="main_articles__wrap">
+              <div class="main_articles__img">
+                <img src="./img/prod-1x.png" alt="" />
+              </div>
+              <div class="main_articles__init">
+                <h3 class="main_articles__name">
+                  Топ 10 растений для живой изгороди
+                </h3>
+                <div class="main_articles__date">
+                  <svg class="main_articles__icon">
+                    <use href="./img/icons.svg#icon_calendar"></use>
+                  </svg>
+                  <span>28.07.22</span>
+                </div>
+                <div class="main_articles__text">
+                  В представленном обзоре постараемся дать описание тому, что
+                  такое живая изгородь, используя подборку самых эффектных
+                  растений. такое живая изгородь, используя подборку самых
+                  эффектных растений. такое живая изгородь, используя подборку
+                  самых эффектных растений.
+                </div>
+                <a href="" class="main_articles__btn">
+                  Подробней
+                  <svg class="main_articles__arrow">
+                    <use href="./img/icons.svg#icon_arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="swiper js__articles"> -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="main_articles__wrap">
+              <div class="main_articles__img">
+                <img src="./img/artic.png" alt="" loading="lazy" />
+              </div>
+              <div class="main_articles__init">
+                <h3 class="main_articles__name">
+                  Топ 10 растений для живой изгороди для живой изгороди
+                </h3>
+                <div class="main_articles__date">
+                  <svg class="main_articles__icon">
+                    <use href="./img/icons.svg#icon_calendar"></use>
+                  </svg>
+                  <span>28.07.22</span>
+                </div>
+                <div class="main_articles__text">
+                  В представленном обзоре постараемся дать описание тому, что
+                  такое живая изгородь, используя подборку самых эффектных
+                  растений.
+                </div>
+                <a href="" class="main_articles__btn">
+                  Подробней
+                  <svg class="main_articles__arrow">
+                    <use href="./img/icons.svg#icon_arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="main_articles__wrap">
+              <div class="main_articles__img">
+                <img src="./img/prod-1x.png" alt="" />
+              </div>
+              <div class="main_articles__init">
+                <h3 class="main_articles__name">
+                  Топ 10 растений для живой изгороди
+                </h3>
+                <div class="main_articles__date">
+                  <svg class="main_articles__icon">
+                    <use href="./img/icons.svg#icon_calendar"></use>
+                  </svg>
+                  <span>28.07.22</span>
+                </div>
+                <div class="main_articles__text">
+                  В представленном обзоре постараемся дать описание тому, что
+                  такое живая изгородь, используя подборку самых эффектных
+                  растений. такое живая изгородь, используя подборку самых
+                  эффектных растений. такое живая изгородь, используя подборку
+                  самых эффектных растений.
+                </div>
+                <a href="" class="main_articles__btn">
+                  Подробней
+                  <svg class="main_articles__arrow">
+                    <use href="./img/icons.svg#icon_arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="section__footer">
+            <a class="section__link section__link--mob" href="">
+              Смотреть все
+              <svg class="section__link_icon">
+                <use href="./img/icons.svg#icon_arrow-link"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Интернет магазин саженцев -->
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section__head">
+            <h1 class="section__title">Интернет магазин саженцев - Идея Сад</h1>
+          </div>
+          <div class="main_about">
+            <div class="main_about__img">
+              <img src="./img/about.png" alt="" />
+            </div>
+            <div class="main_about__box">
+              <div class="main_about__txt">
+                Мы рады приветствовать Вас в нашем питомнике - интернет-магазине
+                Idea Sad. Нередко у каждого их Вас возникают вопросы: какие
+                сорта выбрать из предложенного разнообразия? Когда и как, где
+                осуществить посадку? Как ухаживать? Мы с удовольствием поможем
+                решить эти задачи! <br /><br />Мы рады приветствовать Вас в
+                нашем питомнике предложенного разнообразия? Когда и как, где
+                осуществить посадку? Как ухаживать? Мы с удовольствием поможем
+                решить эти задачи! Мы рады приветствовать Вас в нашем питомнике
+                предложенного разнообразия? Когда и как, где осуществить
+                посадку? Как ухаживать? Мы с удовольствием поможем решить эти
+                задачи!
+              </div>
+              <a href="" class="main_about__btn">
+                Подробней
+                <svg class="main_about__arrow">
+                  <use href="./img/icons.svg#icon_arrow-link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Преимущества -->
+      <section class="section section--ligth">
+        <div class="container">
+          <div class="section__head section__head--centred">
+            <h2 class="section__title">
+              Чем <span>IdeaSad</span> лучше других?
+            </h2>
+          </div>
+          <div class="advantage">
+            <!-- <div class="swiper js__articles"> -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="advantage__box">
+              <svg class="advantage__icon advantage__icon--garant">
+                <use href="./img/icons.svg#icon_guarantee"></use>
+              </svg>
+              <h3 class="advantage__title">Гарантия</h3>
+              <p class="advantage__desk">
+                Если вы получили некачественный саженец, то мы его заменим. Вам
+                не придется платить даже за доставку.
+              </p>
+            </div>
+            <!-- div -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="advantage__box">
+              <svg class="advantage__icon advantage__icon--garant">
+                <use href="./img/icons.svg#icon_free"></use>
+              </svg>
+              <h3 class="advantage__title">Бесплатные инструкции</h3>
+              <p class="advantage__desk">
+                Если вы получили некачественный саженец, то мы его заменим. Вам
+                не придется платить даже за доставку.
+              </p>
+            </div>
+            <!-- div -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="advantage__box">
+              <svg class="advantage__icon advantage__icon--garant">
+                <use href="./img/icons.svg#icon_consultation"></use>
+              </svg>
+              <h3 class="advantage__title">Консультации</h3>
+              <p class="advantage__desk">
+                Если вы получили некачественный саженец, то мы его заменим. Вам
+                не придется платить даже за доставку.
+              </p>
+            </div>
+            <!-- div -->
+            <!-- <div class="swiper-slide"> -->
+            <div class="advantage__box">
+              <svg class="advantage__icon advantage__icon--garant">
+                <use href="./img/icons.svg#icon_price"></use>
+              </svg>
+              <h3 class="advantage__title">Низкие цены</h3>
+              <p class="advantage__desk">
+                Если вы получили некачественный саженец, то мы его заменим. Вам
+                не придется платить даже за доставку.
+              </p>
+            </div>
+            <!-- div -->
+
+            <!-- div -->
+            <!-- div -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__side_left">
+            <div class="footer__logo">
+              <a class="logo" href="http://" aria-label="IdeaSad">
+                <svg class="logo__icon footer__logo_icon">
+                  <use href="./img/icons.svg#icon_logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__copyright">
+              Iнтернет крамниця Iдея-Сад. <br />Copyright © 2022. Усi права
+              захищено
+            </div>
+            <div class="footer__social_box">
+              <div class="footer__subtitle">Подписаться:</div>
+              <div class="footer__social">
+                <div class="social">
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--facebook">
+                      <use href="./img/icons.svg#icon_facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--viber">
+                      <use href="./img/icons.svg#icon_viber"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--insta">
+                      <use href="./img/icons.svg#icon_insta"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--telegram">
+                      <use href="./img/icons.svg#icon_telegram"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--youtube">
+                      <use href="./img/icons.svg#icon_youtube"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__side_right">
+            <div class="footer__box">
+              <div class="footer__title">О магазине</div>
+              <a class="footer__link" href="http://">Идея Сад</a>
+              <a class="footer__link" href="http://">Блог</a>
+              <a class="footer__link" href="http://">Оплата и Доставка</a>
+              <a class="footer__link" href="http://">Акции</a>
+              <a class="footer__link" href="http://">Лидеры продаж</a>
+              <a class="footer__link" href="http://">Новости</a>
+              <a class="footer__link" href="http://">Контакты</a>
+              <a class="footer__link" href="http://">Гарантии</a>
+            </div>
+            <div class="footer__box">
+              <div class="footer__title">Каталог</div>
+              <a class="footer__link" href="http://">Орехоплодные культуры</a>
+              <a class="footer__link" href="http://">Колоновидные культуры</a>
+              <a class="footer__link" href="http://">Плодовые культуры</a>
+              <a class="footer__link" href="http://">Ягодные культуры</a>
+              <a class="footer__link" href="http://">Комнатные растения</a>
+              <a class="footer__link" href="http://">Гортензия</a>
+              <a class="footer__link" href="http://">Цитрусовые растения</a>
+              <a class="footer__link" href="http://">Хвойные растения</a>
+              <a class="footer__link" href="http://">Декоративные деревья</a>
+              <a class="footer__link" href="http://">Декоративные кустарники</a>
+            </div>
+            <div class="footer__box">
+              <div class="footer__title">
+                ТОП Запросы
+                <span class="footer__show">
+                  <svg class="footer__show_icon">
+                    <use href="./img/icons.svg#icon_arrow-b"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__scrollbar">
+                <a class="footer__link" href="http://">Орехоплодные культуры</a>
+                <a class="footer__link" href="http://">Колоновидные культуры</a>
+                <a class="footer__link" href="http://">Плодовые культуры</a>
+                <a class="footer__link" href="http://">Ягодные культуры</a>
+                <a class="footer__link" href="http://">Комнатные растения</a>
+                <a class="footer__link" href="http://">Гортензия</a>
+                <a class="footer__link" href="http://">Цитрусовые растения</a>
+                <a class="footer__link" href="http://">Хвойные растения</a>
+                <a class="footer__link" href="http://">Декоративные деревья</a>
+                <a class="footer__link" href="http://"
+                  >Декоративные кустарники</a
+                >
+
+                <a class="footer__link" href="http://">Комнатные растения</a>
+                <a class="footer__link" href="http://">Гортензия</a>
+                <a class="footer__link" href="http://">Цитрусовые растения</a>
+                <a class="footer__link" href="http://">Хвойные растения</a>
+                <a class="footer__link" href="http://">Декоративные деревья</a>
+                <a class="footer__link" href="http://"
+                  >Декоративные кустарники</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

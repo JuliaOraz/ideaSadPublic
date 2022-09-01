@@ -1,0 +1,39 @@
+.price {
+    display: inline-block;
+    position: relative;
+}
+
+.price--old {
+    &::after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: $attentionBg;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+}
+
+.price__value {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.price__sign {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 64%;
+
+    .price--old &,
+    .price--from & {
+        font-size: 90%;
+    }
+
+}
+
+.price__txt {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 90%;
+}

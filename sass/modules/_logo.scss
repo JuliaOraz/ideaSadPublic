@@ -1,0 +1,14 @@
+// start logo
+.logo {
+    width: 100%;
+}
+
+.logo__icon {
+    fill: $primaryIco;
+    stroke: $primaryIco;
+
+    @include desk {
+        fill: $accentDarkIco;
+        stroke: $accentDarkIco;
+    }
+}
