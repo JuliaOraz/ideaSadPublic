@@ -136,10 +136,12 @@
 
 .head__inner{
     display: none;
+    margin-left: 15px;
+    position: relative;
 
     @include desk {
         display: block;
-        margin-left: 15px;
+        
     }
 }
 .head__title{
@@ -148,22 +150,51 @@
     color: $secondaryTxt;
 }
 .head__content{
-    font-weight: 700;
-
 
     & span{
-        font-weight: 400;
         margin-right: 7px;
+    }
+
+    &--bold{
+        font-weight: 700;
+
+        & span{
+            font-weight: 400;
+        }
     }
 }
 .head__content_link{
     color: $primaryTxt;
+
+        font-weight: 700;
+        
+        
+            // & span {
+            //     font-weight: 400;
+            //     margin-right: 7px;
+            // }
 }
 .head__content_icon{
     width: 10px;
     height: 7px;
     stroke: $accentDarkIco;
     margin: 2px 0 2px 5px;
+}
+.head__dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 15px 10px;
+    position: absolute;
+    left: 0;
+    width: calc(100% + 10px);
+    box-shadow: 0 0px 10px 0px #8d8c8c3d;
+
+    .head__inner:hover &{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 .head__btn{
     display: none;

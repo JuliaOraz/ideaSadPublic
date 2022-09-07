@@ -5,9 +5,31 @@
         flex-wrap: wrap;
         margin-left: -10px;
         margin-right: -10px;
+
+        & .swiper-grid-column>.swiper-wrapper{
+            flex-direction: row;
+        }
+
+        & .swiper-slide{
+            height: calc((100% - 30px) / 2);
+            margin-bottom: 30px;
+
+            
+        }
+                & .swiper-slide:nth-last-child(2n){
+                    margin-bottom: 0;
+                }
     }
     
 }
+ 
+
+    
+// .main_articles{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     // grid-template-columns: 1fr 1fr;
+// }
 .main_articles__wrap{
     margin-bottom: 30px;
 

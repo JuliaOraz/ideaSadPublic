@@ -21,6 +21,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      .swiper-slide {
+        width: calc((100%) / 4);
+      }
+    </style>
   </head>
   <body>
     <!-- Шапка -->
@@ -56,7 +61,7 @@
                 </svg>
                 <div class="head__inner">
                   <span class="head__title">Режим работы:</span>
-                  <div class="head__content">
+                  <div class="head__content head__content--bold">
                     <span>Пн-Пт:</span>9<sup>00</sup> - 18<sup>00</sup>
                   </div>
                 </div>
@@ -75,6 +80,11 @@
                       </svg>
                     </a>
                   </div>
+                  <!-- <div class="head__dropdown">
+                    <a class="head__content_link" href="tel:+380683546433"
+                      >+38 068 354 64 33</a
+                    >
+                  </div> -->
                 </div>
               </div>
               <div class="head__box">
@@ -300,7 +310,11 @@
             </div>
           </div>
           <div class="main_products">
-            <div class="swiper main_product__swiper js__swiperProd_1">
+            <div
+              class="swiper main_product__swiper js__swiperProd_1 js__swiper"
+              id="swiper__prod"
+              data-swiper='{"slidesPerView": 1,"navigation": {"nextEl": ".js__swiperProd_1--next","prevEl": ".js__swiperProd_1--prev"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 2},"640": {"slidesPerView": 3},"1260": {"slidesPerView": 4}}}'
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product_short product_short--full">
@@ -887,7 +901,11 @@
             </div>
           </div>
           <div class="main_products">
-            <div class="swiper js__swiperProd_2">
+            <div
+              class="swiper js__swiper"
+              id="swiper__Prod_2"
+              data-swiper='{ "slidesPerView": 1,"navigation": {"nextEl": ".js__swiperProd_2--next","prevEl": ".js__swiperProd_2--prev"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 2},"640": {"slidesPerView": 3},"1260": {"slidesPerView": 4}}}'
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product_short product_short--full">
@@ -1474,7 +1492,11 @@
             </div>
           </div>
           <div class="main_video">
-            <div class="swiper js__swiperVideo">
+            <div
+              class="swiper js__swiper"
+              id="swiperVideo"
+              data-swiper='{ "slidesPerView": 1,"navigation": {"nextEl": ".js__swiperVideo--next","prevEl": ".js__swiperVideo--prev"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 1},"640": {"slidesPerView": 2},"1260": {"slidesPerView": 3}}}'
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="main_video__wrap">
@@ -1647,7 +1669,11 @@
             </div>
           </div>
           <div class="main_products">
-            <div class="swiper main_product__swiper js__swiperProd_3">
+            <div
+              class="swiper main_product__swiper js__swiper"
+              id="swiper__prod3"
+              data-swiper='{ "slidesPerView": 2,"navigation": {"nextEl": ".js__swiperProd_3--next","prevEl": ".js__swiperProd_3--prev"},"breakpoints": {"320": {"slidesPerView": 2},"480": {"slidesPerView": 3},"640": {"slidesPerView": 4},"1260": {"slidesPerView": 5}}}'
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product_short">
@@ -2176,7 +2202,7 @@
           <div class="section__head">
             <h2 class="section__title">Полезная информация</h2>
             <div class="section__nav">
-              <!-- <div class="section__btn_group">
+              <div class="section__btn_group">
                 <div class="section__btn section__btn--prev js__articles--prev">
                   <svg class="section__btn_icon">
                     <use href="./img/icons.svg#icon_arrow-l"></use>
@@ -2187,7 +2213,7 @@
                     <use href="./img/icons.svg#icon_arrow-r"></use>
                   </svg>
                 </div>
-              </div> -->
+              </div>
               <a class="section__link" href="">
                 Смотреть все
                 <svg class="section__link_icon">
@@ -2197,134 +2223,134 @@
             </div>
           </div>
           <div class="main_articles">
-            <!-- <div class="swiper js__articles"> -->
-            <!-- <div class="swiper-wrapper"> -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="main_articles__wrap">
-              <div class="main_articles__img">
-                <img src="./img/artic.png" alt="" loading="lazy" />
-              </div>
-              <div class="main_articles__init">
-                <h3 class="main_articles__name">
-                  Топ 10 растений для живой изгороди для живой изгороди
-                </h3>
-                <div class="main_articles__date">
-                  <svg class="main_articles__icon">
-                    <use href="./img/icons.svg#icon_calendar"></use>
-                  </svg>
-                  <span>28.07.22</span>
+            <div
+              class="swiper js__swiper"
+              id="swiper__articles"
+              data-swiper='{"slidesPerView": 1,"navigation": {"nextEl": ".js__articles--next","prevEl": ".js__articles--prev"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 1},"768": {"slidesPerView": 1,"grid": {"rows": 2}},"1260": {"slidesPerView": 2,"fill": "row","grid": {"rows": 2}}}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main_articles__wrap">
+                    <div class="main_articles__img">
+                      <img src="./img/artic.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="main_articles__init">
+                      <h3 class="main_articles__name">
+                        Топ 10 растений для живой изгороди для живой изгороди
+                      </h3>
+                      <div class="main_articles__date">
+                        <svg class="main_articles__icon">
+                          <use href="./img/icons.svg#icon_calendar"></use>
+                        </svg>
+                        <span>28.07.22</span>
+                      </div>
+                      <div class="main_articles__text">
+                        В представленном обзоре постараемся дать описание тому,
+                        что такое живая изгородь, используя подборку самых
+                        эффектных растений.
+                      </div>
+                      <a href="" class="main_articles__btn">
+                        Подробней
+                        <svg class="main_articles__arrow">
+                          <use href="./img/icons.svg#icon_arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="main_articles__text">
-                  В представленном обзоре постараемся дать описание тому, что
-                  такое живая изгородь, используя подборку самых эффектных
-                  растений.
+                <div class="swiper-slide">
+                  <div class="main_articles__wrap">
+                    <div class="main_articles__img">
+                      <img src="./img/prod-1x.png" alt="" />
+                    </div>
+                    <div class="main_articles__init">
+                      <h3 class="main_articles__name">
+                        Топ 10 растений для живой изгороди
+                      </h3>
+                      <div class="main_articles__date">
+                        <svg class="main_articles__icon">
+                          <use href="./img/icons.svg#icon_calendar"></use>
+                        </svg>
+                        <span>28.07.22</span>
+                      </div>
+                      <div class="main_articles__text">
+                        В представленном обзоре постараемся дать описание тому,
+                        что такое живая изгородь, используя подборку самых
+                        эффектных растений. такое живая изгородь, используя
+                        подборку самых эффектных растений. такое живая изгородь,
+                        используя подборку самых эффектных растений.
+                      </div>
+                      <a href="" class="main_articles__btn">
+                        Подробней
+                        <svg class="main_articles__arrow">
+                          <use href="./img/icons.svg#icon_arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <a href="" class="main_articles__btn">
-                  Подробней
-                  <svg class="main_articles__arrow">
-                    <use href="./img/icons.svg#icon_arrow-link"></use>
-                  </svg>
-                </a>
+                <div class="swiper-slide">
+                  <div class="main_articles__wrap">
+                    <div class="main_articles__img">
+                      <img src="./img/artic.png" alt="" loading="lazy" />
+                    </div>
+                    <div class="main_articles__init">
+                      <h3 class="main_articles__name">
+                        Топ 10 растений для живой изгороди для живой изгороди
+                      </h3>
+                      <div class="main_articles__date">
+                        <svg class="main_articles__icon">
+                          <use href="./img/icons.svg#icon_calendar"></use>
+                        </svg>
+                        <span>28.07.22</span>
+                      </div>
+                      <div class="main_articles__text">
+                        В представленном обзоре постараемся дать описание тому,
+                        что такое живая изгородь, используя подборку самых
+                        эффектных растений.
+                      </div>
+                      <a href="" class="main_articles__btn">
+                        Подробней
+                        <svg class="main_articles__arrow">
+                          <use href="./img/icons.svg#icon_arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main_articles__wrap">
+                    <div class="main_articles__img">
+                      <img src="./img/prod-1x.png" alt="" />
+                    </div>
+                    <div class="main_articles__init">
+                      <h3 class="main_articles__name">
+                        Топ 10 растений для живой изгороди
+                      </h3>
+                      <div class="main_articles__date">
+                        <svg class="main_articles__icon">
+                          <use href="./img/icons.svg#icon_calendar"></use>
+                        </svg>
+                        <span>28.07.22</span>
+                      </div>
+                      <div class="main_articles__text">
+                        В представленном обзоре постараемся дать описание тому,
+                        что такое живая изгородь, используя подборку самых
+                        эффектных растений. такое живая изгородь, используя
+                        подборку самых эффектных растений. такое живая изгородь,
+                        используя подборку самых эффектных растений.
+                      </div>
+                      <a href="" class="main_articles__btn">
+                        Подробней
+                        <svg class="main_articles__arrow">
+                          <use href="./img/icons.svg#icon_arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="main_articles__wrap">
-              <div class="main_articles__img">
-                <img src="./img/prod-1x.png" alt="" />
-              </div>
-              <div class="main_articles__init">
-                <h3 class="main_articles__name">
-                  Топ 10 растений для живой изгороди
-                </h3>
-                <div class="main_articles__date">
-                  <svg class="main_articles__icon">
-                    <use href="./img/icons.svg#icon_calendar"></use>
-                  </svg>
-                  <span>28.07.22</span>
-                </div>
-                <div class="main_articles__text">
-                  В представленном обзоре постараемся дать описание тому, что
-                  такое живая изгородь, используя подборку самых эффектных
-                  растений. такое живая изгородь, используя подборку самых
-                  эффектных растений. такое живая изгородь, используя подборку
-                  самых эффектных растений.
-                </div>
-                <a href="" class="main_articles__btn">
-                  Подробней
-                  <svg class="main_articles__arrow">
-                    <use href="./img/icons.svg#icon_arrow-link"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- <div class="swiper js__articles"> -->
-            <!-- <div class="swiper-wrapper"> -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="main_articles__wrap">
-              <div class="main_articles__img">
-                <img src="./img/artic.png" alt="" loading="lazy" />
-              </div>
-              <div class="main_articles__init">
-                <h3 class="main_articles__name">
-                  Топ 10 растений для живой изгороди для живой изгороди
-                </h3>
-                <div class="main_articles__date">
-                  <svg class="main_articles__icon">
-                    <use href="./img/icons.svg#icon_calendar"></use>
-                  </svg>
-                  <span>28.07.22</span>
-                </div>
-                <div class="main_articles__text">
-                  В представленном обзоре постараемся дать описание тому, что
-                  такое живая изгородь, используя подборку самых эффектных
-                  растений.
-                </div>
-                <a href="" class="main_articles__btn">
-                  Подробней
-                  <svg class="main_articles__arrow">
-                    <use href="./img/icons.svg#icon_arrow-link"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="main_articles__wrap">
-              <div class="main_articles__img">
-                <img src="./img/prod-1x.png" alt="" />
-              </div>
-              <div class="main_articles__init">
-                <h3 class="main_articles__name">
-                  Топ 10 растений для живой изгороди
-                </h3>
-                <div class="main_articles__date">
-                  <svg class="main_articles__icon">
-                    <use href="./img/icons.svg#icon_calendar"></use>
-                  </svg>
-                  <span>28.07.22</span>
-                </div>
-                <div class="main_articles__text">
-                  В представленном обзоре постараемся дать описание тому, что
-                  такое живая изгородь, используя подборку самых эффектных
-                  растений. такое живая изгородь, используя подборку самых
-                  эффектных растений. такое живая изгородь, используя подборку
-                  самых эффектных растений.
-                </div>
-                <a href="" class="main_articles__btn">
-                  Подробней
-                  <svg class="main_articles__arrow">
-                    <use href="./img/icons.svg#icon_arrow-link"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
           </div>
           <div class="section__footer">
             <a class="section__link section__link--mob" href="">
@@ -2379,59 +2405,63 @@
             </h2>
           </div>
           <div class="advantage">
-            <!-- <div class="swiper js__articles"> -->
-            <!-- <div class="swiper-wrapper"> -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="advantage__box">
-              <svg class="advantage__icon advantage__icon--garant">
-                <use href="./img/icons.svg#icon_guarantee"></use>
-              </svg>
-              <h3 class="advantage__title">Гарантия</h3>
-              <p class="advantage__desk">
-                Если вы получили некачественный саженец, то мы его заменим. Вам
-                не придется платить даже за доставку.
-              </p>
+            <div
+              class="swiper js__swiper"
+              id="swiper__advantage"
+              data-swiper='{"slidesPerView": 1, "pagination": {"el": ".advantage__pagination","type": "bullets","clickable": "true"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 2},"640": {"slidesPerView": 3},"1260": {"slidesPerView": 4}}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_guarantee"></use>
+                    </svg>
+                    <h3 class="advantage__title">Гарантия</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_free"></use>
+                    </svg>
+                    <h3 class="advantage__title">Бесплатные инструкции</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_consultation"></use>
+                    </svg>
+                    <h3 class="advantage__title">Консультации</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_price"></use>
+                    </svg>
+                    <h3 class="advantage__title">Низкие цены</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantage__pagination"></div>
             </div>
-            <!-- div -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="advantage__box">
-              <svg class="advantage__icon advantage__icon--garant">
-                <use href="./img/icons.svg#icon_free"></use>
-              </svg>
-              <h3 class="advantage__title">Бесплатные инструкции</h3>
-              <p class="advantage__desk">
-                Если вы получили некачественный саженец, то мы его заменим. Вам
-                не придется платить даже за доставку.
-              </p>
-            </div>
-            <!-- div -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="advantage__box">
-              <svg class="advantage__icon advantage__icon--garant">
-                <use href="./img/icons.svg#icon_consultation"></use>
-              </svg>
-              <h3 class="advantage__title">Консультации</h3>
-              <p class="advantage__desk">
-                Если вы получили некачественный саженец, то мы его заменим. Вам
-                не придется платить даже за доставку.
-              </p>
-            </div>
-            <!-- div -->
-            <!-- <div class="swiper-slide"> -->
-            <div class="advantage__box">
-              <svg class="advantage__icon advantage__icon--garant">
-                <use href="./img/icons.svg#icon_price"></use>
-              </svg>
-              <h3 class="advantage__title">Низкие цены</h3>
-              <p class="advantage__desk">
-                Если вы получили некачественный саженец, то мы его заменим. Вам
-                не придется платить даже за доставку.
-              </p>
-            </div>
-            <!-- div -->
-
-            <!-- div -->
-            <!-- div -->
           </div>
         </div>
       </section>
