@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/categories.css" />
     <style>
       .swiper-slide {
         width: calc((100%) / 4);
@@ -182,143 +182,38 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section section--ligth">
         <div class="container">
-          <div class="product_card__breadcrumbs">
+          <div class="categories__breadcrumbs">
             <div class="breadcrumbs">
               <div class="breadcrumbs__scroll">
                 <a class="breadcrumbs__link" href="./">Идея Сад</a>
-                <a class="breadcrumbs__link" href="">Декоративные растения</a>
-                <a class="breadcrumbs__link" href="">Декоративные кустарники</a>
-                <a class="breadcrumbs__link" href="">Бересклет</a>
-                <a class="breadcrumbs__link" href="">
-                  Бересклет форчуна "Emerald Gold - Эмеральд Голд"
-                </a>
+                <a class="breadcrumbs__link" href="">Плодовые деревья</a>
+                <a class="breadcrumbs__link" href="">Груша</a>
               </div>
             </div>
           </div>
           <h1 class="section__title_page">
-            Бересклет форчуна "Emerald Gold - Эмеральд Голд"
+            Саженцы плодовых деревьев из питомника
           </h1>
-          <div class="product_card__wrap">
-            <div class="product_card__group_image">
-              <!-- <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div> -->
-            </div>
-            <div class="product_card__card">
-              <div class="product_card__row">
-                <span class="product_card__stock product_card__stock--in_stock"
-                  >Товар в наличии</span
-                >
-                <span class="product_card__vendor_code">Артикул: THR16801</span>
+          <p class="categories__desk">
+            В каталоге интернет-магазина «IdeaSad» каждый садовод Украины сможет
+            подобрать и дешево приобрести качественные саженцы колоннообразных и
+            обычных плодовых деревьев оптом или поштучно. Отправляем посадочный
+            материал во все уголки страны. Даем гарантию качества.
+          </p>
+          <div class="categories__grid">
+            <a href="" class="categories__box">
+              <div class="categories__image">
+                <img
+                  class="img"
+                  src="./img/categories_1.png"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
-              <div class="product_card__row">
-                <div class="product_card__rating_box">
-                  <span>Рейтинг</span>
-                  <div class="product_card__rating">
-                    <div class="rating"></div>
-                  </div>
-                </div>
-                <a href="" class="product_card__reviews_amount"> 0 отзывов </a>
-              </div>
-              <div class="product_card__prices product_card__prices--sale">
-                <div class="product_card__price_current">
-                  <div class="price">
-                    <div class="price__value">45.00</div>
-                    <div class="price__sign">грн</div>
-                  </div>
-                </div>
-                <div class="product_card__price_sale">
-                  <div class="product_card__price_old">
-                    <div class="price">
-                      <div class="price__value">50.00</div>
-                      <div class="price__sign">грн</div>
-                    </div>
-                  </div>
-                  <div class="product_card__price_term">
-                    <svg class="product_card__price_icon">
-                      <use href="./img/icons.svg#icon_watch"></use>
-                    </svg>
-                    до 08.09.2022
-                  </div>
-                </div>
-              </div>
-              <div class="product_card__row">
-                <div class="product_card__amount">
-                  <div class="amount">
-                    <button
-                      class="amount__btn amount__btn--decrement"
-                      type="button"
-                    >
-                      -
-                    </button>
-                    <input
-                      class="amount__input"
-                      type="text"
-                      name="amount"
-                      value="1"
-                    />
-                    <button
-                      class="amount__btn amount__btn--increment"
-                      type="button"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-                <form class="product_card__cart">
-                  <button class="product_card__cart_btn">
-                    <svg class="product_card__cart_icon">
-                      <use href="./img/icons.svg#icon_cart"></use>
-                    </svg>
-                    <span>Купить</span>
-                  </button>
-                </form>
-              </div>
-              <div class="product_card__row">
-                <button class="product_card__buyclick_btn" type="button">
-                  Быстрый заказ
-                </button>
-              </div>
-              <div class="product_card__row">
-                <div class="product_card__option">
-                  <div class="product_card__subtitle">Возраст саженца</div>
-                  <div class="product_card__select">
-                    <select class="select" name="select" id="select">
-                      <option class="select__option" value="value1" selected>
-                        1 год
-                      </option>
-                      <option class="select__option" value="value2">
-                        2 годa
-                      </option>
-                      <option class="select__option" value="value3">
-                        3 годa
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="product_card__row">
-                <div class="product_card__option">
-                  <div class="product_card__subtitle">Оптовые цены</div>
-                  <div class="product_card__radio">
-                    <label class="radio__full">
-                      <input type="radio" name="wholesale" value="1" />
-                      <div>от 1 шт - <span>45.00</span> грн</div>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product_card__info"></div>
+              <h2 class="categories__name">Колоновидные деревья</h2>
+            </a>
           </div>
         </div>
       </section>
