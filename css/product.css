@@ -267,8 +267,14 @@ button {
 
 .section__title_page {
   font-weight: 600;
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1260px) {
+  .section__title_page {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .section__nav {
@@ -407,6 +413,7 @@ button {
   padding: 13px;
 }
 .product_short--full:hover {
+  z-index: 1;
   -webkit-filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.1));
 }
@@ -1946,7 +1953,7 @@ button {
 
 .advantage__pagination {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .advantage__pagination .swiper-pagination-bullet {
   height: 17px;
@@ -1971,6 +1978,18 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .footer__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1982,6 +2001,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__side_left {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .footer__side_left {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo {
@@ -2003,7 +2032,7 @@ button {
 .footer__social_box {
   margin-top: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1260px) {
   .footer__social_box {
     margin-top: 30%;
   }
@@ -2024,11 +2053,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 60%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 15px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .footer__side_right {
+    width: 60%;
   }
 }
 
