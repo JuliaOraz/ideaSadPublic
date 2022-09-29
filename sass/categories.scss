@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './utils/breakpoints';
+
+@import './base';
+
+
+@import './modules/search';
+@import './modules/logo';
+@import './modules/section';
+@import './modules/product_short';
+@import './modules/features';
+@import './modules/rating';
+@import './modules/price';
+
+
+
+@import './components/header';
+@import './components/breadcrumbs';
+@import './components/categories';
+@import './components/advantage';
+@import './components/footer';

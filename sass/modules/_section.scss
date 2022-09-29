@@ -36,7 +36,14 @@
     @include tab {
         font-size: 28px;
     }
+
+   
 }
+ .section__title_page {
+     font-weight: 600;
+     font-size: 36px;
+     margin-bottom: 30px;
+ }
 .section__nav{
     display: flex;
     align-items: center;

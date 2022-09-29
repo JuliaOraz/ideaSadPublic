@@ -1,0 +1,24 @@
+.categories__breadcrumbs{
+    margin-bottom: 15px;
+}
+.categories__desk{
+    margin-bottom: 30px;
+}
+
+.categories__grid{
+    display: inline-flex;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+.categories__box{
+    flex-basis: calc((100% - 5 * 24px) / 5);
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 30px 25px;
+
+    background: $primaryBg;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.categories__image{}
+.categories__name{}
