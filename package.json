@@ -1,0 +1,22 @@
+{
+  "name": "ideasadpublic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaOraz/ideaSadPublic.git"
+  },
+  "author": "YOUR_NAME <YOUR_EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaOraz/ideaSadPublic/issues"
+  },
+  "homepage": "https://github.com/JuliaOraz/ideaSadPublic#readme",
+  "dependencies": {
+    "nice-select2": "^2.0.0"
+  }
+}

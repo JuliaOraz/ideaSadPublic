@@ -1,0 +1,323 @@
+.product_card__breadcrumbs{
+    margin-bottom: 15px;
+}
+.product_card__title{
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.product_card__wrap{
+    display: flex;
+}
+.product_card__group_image{
+    width: 40%;
+}
+.product_card__card{
+    width: 36%;
+}
+.product_card__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product_card__stock{
+    padding: 6px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+    color: $darkTxt;
+
+    &--in_stock{
+        background: #D9F2ED;
+    }
+    &--out_stock{}
+}
+.product_card__vendor_code{
+    color: $secondaryTxt;
+    font-size: 14px;
+}
+.product_card__rating_box{
+    display: flex;
+    align-items: center;
+    & span {
+        font-size: 14px;
+        color: $secondaryTxt;
+        margin-right: 10px;
+    }
+}
+.product_card__rating{
+    width: 90px;
+    height: 18px;
+}
+.product_card__reviews_amount{
+    font-size: 14px;
+    color: $secondaryTxt;
+    text-decoration: underline;
+}
+.product_card__prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    &--sale{
+        justify-content: space-around;
+        background: rgba(255, 207, 84, 0.13);
+    }
+}
+.product_card__price_current{
+    font-weight: 700;
+    font-size: 36px;
+    color: $primaryTxt;
+
+    .product_card__prices--sale &{
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        text-align: center;
+        color: $attentionTxt;
+    }
+}
+.product_card__price_sale{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    padding-left: 15px;
+}
+.product_card__price_old{
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    color: $primaryTxt;
+   
+
+    &::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: calc(100% - 20px);
+        background-color: $attentionBg;
+        left: 0;
+        top: 10px;
+        transform: rotate(347deg);
+    }
+}
+.product_card__price_term{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+   
+}
+.product_card__price_icon{
+    margin-right: 5px;
+    stroke: $darkIco;
+    height: 14px;
+    width: 14px;
+}
+.product_card__amount{
+    height: 50px;
+    margin-right: 10px;
+    width: calc(50% - 10px);
+}
+.product_card__cart{
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    height: 50px;
+}
+.product_card__cart_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: $accentDarkTxt;
+    box-shadow: 0px 4px 15px rgba(5, 170, 130, 0.35);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 250ms $trans;
+
+    &:hover{
+        background-color: $darkHoverBtnBg;
+    }
+
+    & span{
+        margin-left: 8px;
+        font-weight: 600;
+        line-height: 1;
+        color: $primaryLightTxt;
+    }
+    
+}
+.product_card__cart_icon{
+    fill: $primaryIco;
+    height: 24px;
+    width: 25px;
+}
+.product_card__buyclick_btn{
+    width: 100%;
+    padding: 8px;
+    background-color: $primaryBg;
+    border: 2px solid $accentBord;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    color: $accentDarkTxt;
+    cursor: pointer;
+    transition: background-color 250ms $trans, color 250ms $trans;
+
+    &:hover{
+        background-color: $darkBtnBg;
+        color: $primaryLightTxt;
+    }
+}
+.product_card__option{
+    width: 100%;
+}
+.product_card__subtitle{
+    color: $secondaryTxt;
+    margin-bottom: 10px;
+}
+
+.product_card__select{
+    width: 100%;
+    height: 40px;
+}
+
+.product_card__info{
+    width: 24%;
+}
+
+
+
+
+
+.select{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background: $seclightBtnBg;
+    border: 1px solid $formBord;
+    border-radius: 8px;
+    appearance: none;
+    font-size: 14px;
+    text-overflow: '';
+    background: url(../../img/arrow_select.svg) 96% no-repeat;
+    
+}
+
+.select__option{
+    border: 1px solid $formBord;
+    height: 20px;
+    border-radius: 8px;
+}
+
+
+
+.amount{
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    height: 100%;
+    justify-content: space-between;
+}
+.amount__input{
+    width: 100%;
+    padding: 0 40px;
+    background: $seclightBtnBg;
+    border: 1px solid $formBord;
+    border-radius: 8px;
+    text-align: center;
+    color: $primaryTxt;
+    font-weight: 700;
+    font-size: 14px;
+}
+.amount__btn{
+    position: absolute;
+    padding: 13px 15px;
+    font-size: 20px;
+    color: $primaryTxt;
+    cursor: pointer;
+    transition: color 250ms $trans;
+
+    &:hover {
+        color: $accentDarkTxt;
+    }
+
+    &--increment{
+        right: 0;
+    }
+    &--decrement{
+        left: 0;
+    }
+
+}
+
+
+
+.product_card__radio{}
+.radio__full{}
+
+.radio__full {
+    position: relative;
+    &>input{
+        // position: absolute;
+        // z-index: -1;
+        // opacity: 0;
+        display: none;
+    }
+
+    &>div {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        width: 100%;
+        background: $seclightBtnBg;
+            border-radius: 8px;
+            padding: 10px 16px;
+    }
+
+    // &>div::before {
+    //     content: '';
+    //     position: absolute;
+    //     left: 0;
+    //     display: inline-block;
+    //     width: 100%;
+    //     height: 100%;
+    //     flex-shrink: 0;
+    //     flex-grow: 0;
+    //     background-color: #333;
+    // }
+    
+    &>input:not(:disabled):not(:checked)+div:hover::before {
+        background-color: #333;
+    }
+
+    &>input:not(:disabled):active+div::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+    }
+
+    &>input:focus+div::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    &>input:focus:not(:checked)+div::before {
+        border-color: #80bdff;
+    }
+
+    &>input:checked+div::before {
+        border-color: #0b76ef;
+        background-color: #0b76ef;
+    }
+
+    &>input:disabled+div::before {
+        background-color: #e9ecef;
+    }
+}

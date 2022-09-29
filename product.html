@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idea Sad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/product.css" />
+    <style>
+      .swiper-slide {
+        width: calc((100%) / 4);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header>
+      <div class="head_top">
+        <div class="container">
+          <nav class="head_top__nav">
+            <a class="head_top__link" href="">Идея Сад</a>
+            <a class="head_top__link" href="">Полезная информация</a>
+            <a class="head_top__link" href="">Оплата и Доставка</a>
+            <a class="head_top__link" href="">Акционные товары</a>
+            <a class="head_top__link" href="">Хиты продаж</a>
+            <a class="head_top__link" href="">Новости</a>
+            <a class="head_top__link" href="">Контакты</a>
+            <a class="head_top__link" href="">Гарантии</a>
+          </nav>
+        </div>
+      </div>
+      <div class="head">
+        <div class="container">
+          <div class="head__holder">
+            <div class="head__logo">
+              <a class="logo" href="http://" aria-label="IdeaSad">
+                <svg class="logo__icon head__logo_icon">
+                  <use href="./img/icons.svg#icon_logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="head__wrap">
+              <div class="head__box">
+                <svg class="head__icon head__icon--schedule">
+                  <use href="./img/icons.svg#icon_schedule"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Режим работы:</span>
+                  <div class="head__content head__content--bold">
+                    <span>Пн-Пт:</span>9<sup>00</sup> - 18<sup>00</sup>
+                  </div>
+                </div>
+              </div>
+              <div class="head__box head__box--phone">
+                <svg class="head__icon head__icon--phone">
+                  <use href="./img/icons.svg#icon_phone"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Поддержка клиентов:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="tel:+380683546433">
+                      +38 068 354 64 33
+                      <svg class="head__content_icon">
+                        <use href="./img/icons.svg#icon_arrow-b"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!-- <div class="head__dropdown">
+                    <a class="head__content_link" href="tel:+380683546433"
+                      >+38 068 354 64 33</a
+                    >
+                  </div> -->
+                </div>
+              </div>
+              <div class="head__box">
+                <svg class="head__icon head__icon--lang">
+                  <use href="./img/icons.svg#icon_lang"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Язык:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="">
+                      UA
+                      <svg class="head__content_icon">
+                        <use href="./img/icons.svg#icon_arrow-b"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="head__box head__box--hidden_mob">
+                <svg class="head__icon head__icon--user">
+                  <use href="./img/icons.svg#icon_user"></use>
+                </svg>
+                <div class="head__inner">
+                  <span class="head__title">Кабинет:</span>
+                  <div class="head__content">
+                    <a class="head__content_link" href="">Вход</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn head__btn">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      <div class="head_bottom">
+        <div class="container">
+          <div class="head_bottom__holder">
+            <a href="" class="head_bottom__menu">
+              <svg class="head_bottom__icon_menu">
+                <use
+                  class="head_bottom__icon_mob_menu"
+                  href="./img/icons.svg#icon_menu-mob"
+                ></use>
+                <use
+                  class="head_bottom__icon_desk_menu"
+                  href="./img/icons.svg#icon_menu"
+                ></use>
+              </svg>
+              <span class="head_bottom__menu_title">Каталог товаров</span>
+              <svg class="head_bottom__arrow head_bottom__arrow--menu">
+                <use href="./img/icons.svg#icon_arrow-r"></use>
+              </svg>
+            </a>
+            <form class="head_bottom__search" action="">
+              <div class="search">
+                <input
+                  class="search__input"
+                  type="search"
+                  name="keyword"
+                  placeholder="Поиск товаров"
+                />
+                <button class="search__btn" type="submit" name="search">
+                  <svg class="search__icon">
+                    <use href="./img/icons.svg#icon_search"></use>
+                  </svg>
+                  <span class="search__find">Найти</span>
+                </button>
+              </div>
+            </form>
+            <a href="1" class="head_bottom__favorites">
+              <svg class="head_bottom__icon head_bottom__icon--favorites">
+                <use href="./img/icons.svg#icon_like"></use>
+              </svg>
+              <span class="head_bottom__amount head_bottom__amount--favorites"
+                >0</span
+              >
+            </a>
+            <a href="" class="head_bottom__cart">
+              <svg class="head_bottom__icon head_bottom__icon--cart">
+                <use href="./img/icons.svg#icon_cart"></use>
+              </svg>
+              <span class="head_bottom__amount head_bottom__amount--cart"
+                >0</span
+              >
+              <div class="head_bottom__inner">
+                <div class="head_bottom__caption">Корзина</div>
+                <span class="head_bottom__total">0.0 грн</span>
+                <svg class="head_bottom__arrow head_bottom__arrow--cart">
+                  <use href="./img/icons.svg#icon_arrow-r"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="product_card__breadcrumbs">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__scroll">
+                <a class="breadcrumbs__link" href="./">Идея Сад</a>
+                <a class="breadcrumbs__link" href="">Декоративные растения</a>
+                <a class="breadcrumbs__link" href="">Декоративные кустарники</a>
+                <a class="breadcrumbs__link" href="">Бересклет</a>
+                <a class="breadcrumbs__link" href="">
+                  Бересклет форчуна "Emerald Gold - Эмеральд Голд"
+                </a>
+              </div>
+            </div>
+          </div>
+          <h1 class="product_card__title">
+            Бересклет форчуна "Emerald Gold - Эмеральд Голд"
+          </h1>
+          <div class="product_card__wrap">
+            <div class="product_card__group_image">
+              <!-- <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div> -->
+            </div>
+            <div class="product_card__card">
+              <div class="product_card__row">
+                <span class="product_card__stock product_card__stock--in_stock"
+                  >Товар в наличии</span
+                >
+                <span class="product_card__vendor_code">Артикул: THR16801</span>
+              </div>
+              <div class="product_card__row">
+                <div class="product_card__rating_box">
+                  <span>Рейтинг</span>
+                  <div class="product_card__rating">
+                    <div class="rating"></div>
+                  </div>
+                </div>
+                <a href="" class="product_card__reviews_amount"> 0 отзывов </a>
+              </div>
+              <div class="product_card__prices product_card__prices--sale">
+                <div class="product_card__price_current">
+                  <div class="price">
+                    <div class="price__value">45.00</div>
+                    <div class="price__sign">грн</div>
+                  </div>
+                </div>
+                <div class="product_card__price_sale">
+                  <div class="product_card__price_old">
+                    <div class="price">
+                      <div class="price__value">50.00</div>
+                      <div class="price__sign">грн</div>
+                    </div>
+                  </div>
+                  <div class="product_card__price_term">
+                    <svg class="product_card__price_icon">
+                      <use href="./img/icons.svg#icon_watch"></use>
+                    </svg>
+                    до 08.09.2022
+                  </div>
+                </div>
+              </div>
+              <div class="product_card__row">
+                <div class="product_card__amount">
+                  <div class="amount">
+                    <button
+                      class="amount__btn amount__btn--decrement"
+                      type="button"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="amount__input"
+                      type="text"
+                      name="amount"
+                      value="1"
+                    />
+                    <button
+                      class="amount__btn amount__btn--increment"
+                      type="button"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <form class="product_card__cart">
+                  <button class="product_card__cart_btn">
+                    <svg class="product_card__cart_icon">
+                      <use href="./img/icons.svg#icon_cart"></use>
+                    </svg>
+                    <span>Купить</span>
+                  </button>
+                </form>
+              </div>
+              <div class="product_card__row">
+                <button class="product_card__buyclick_btn" type="button">
+                  Быстрый заказ
+                </button>
+              </div>
+              <div class="product_card__row">
+                <div class="product_card__option">
+                  <div class="product_card__subtitle">Возраст саженца</div>
+                  <div class="product_card__select">
+                    <select class="select" name="select" id="select">
+                      <option class="select__option" value="value1" selected>
+                        1 год
+                      </option>
+                      <option class="select__option" value="value2">
+                        2 годa
+                      </option>
+                      <option class="select__option" value="value3">
+                        3 годa
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="product_card__row">
+                <div class="product_card__option">
+                  <div class="product_card__subtitle">Оптовые цены</div>
+                  <div class="product_card__radio">
+                    <label class="radio__full">
+                      <input type="radio" name="wholesale" value="1" />
+                      <div>от 1 шт - <span>45.00</span> грн</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_card__info"></div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section">
+        <div class="container">
+          
+        </div>
+      </section> -->
+      <section class="section section--ligth">
+        <div class="container">
+          <div class="section__head section__head--centred">
+            <h2 class="section__title">
+              Чем <span>IdeaSad</span> лучше других?
+            </h2>
+          </div>
+          <div class="advantage">
+            <div
+              class="swiper js__swiper"
+              id="swiper__advantage"
+              data-swiper='{"slidesPerView": 1, "pagination": {"el": ".advantage__pagination","type": "bullets","clickable": "true"},"breakpoints": {"320": {"slidesPerView": 1},"480": {"slidesPerView": 2},"640": {"slidesPerView": 3},"1260": {"slidesPerView": 4}}}'
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_guarantee"></use>
+                    </svg>
+                    <h3 class="advantage__title">Гарантия</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_free"></use>
+                    </svg>
+                    <h3 class="advantage__title">Бесплатные инструкции</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_consultation"></use>
+                    </svg>
+                    <h3 class="advantage__title">Консультации</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantage__box">
+                    <svg class="advantage__icon advantage__icon--garant">
+                      <use href="./img/icons.svg#icon_price"></use>
+                    </svg>
+                    <h3 class="advantage__title">Низкие цены</h3>
+                    <p class="advantage__desk">
+                      Если вы получили некачественный саженец, то мы его
+                      заменим. Вам не придется платить даже за доставку.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantage__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__side_left">
+            <div class="footer__logo">
+              <a class="logo" href="http://" aria-label="IdeaSad">
+                <svg class="logo__icon footer__logo_icon">
+                  <use href="./img/icons.svg#icon_logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__copyright">
+              Iнтернет крамниця Iдея-Сад. <br />Copyright © 2022. Усi права
+              захищено
+            </div>
+            <div class="footer__social_box">
+              <div class="footer__subtitle">Подписаться:</div>
+              <div class="footer__social">
+                <div class="social">
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--facebook">
+                      <use href="./img/icons.svg#icon_facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--viber">
+                      <use href="./img/icons.svg#icon_viber"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--insta">
+                      <use href="./img/icons.svg#icon_insta"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--telegram">
+                      <use href="./img/icons.svg#icon_telegram"></use>
+                    </svg>
+                  </a>
+                  <a class="social__link" href="http://">
+                    <svg class="social__icon social__icon--youtube">
+                      <use href="./img/icons.svg#icon_youtube"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__side_right">
+            <div class="footer__box">
+              <div class="footer__title">О магазине</div>
+              <a class="footer__link" href="http://">Идея Сад</a>
+              <a class="footer__link" href="http://">Блог</a>
+              <a class="footer__link" href="http://">Оплата и Доставка</a>
+              <a class="footer__link" href="http://">Акции</a>
+              <a class="footer__link" href="http://">Лидеры продаж</a>
+              <a class="footer__link" href="http://">Новости</a>
+              <a class="footer__link" href="http://">Контакты</a>
+              <a class="footer__link" href="http://">Гарантии</a>
+            </div>
+            <div class="footer__box">
+              <div class="footer__title">Каталог</div>
+              <a class="footer__link" href="http://">Орехоплодные культуры</a>
+              <a class="footer__link" href="http://">Колоновидные культуры</a>
+              <a class="footer__link" href="http://">Плодовые культуры</a>
+              <a class="footer__link" href="http://">Ягодные культуры</a>
+              <a class="footer__link" href="http://">Комнатные растения</a>
+              <a class="footer__link" href="http://">Гортензия</a>
+              <a class="footer__link" href="http://">Цитрусовые растения</a>
+              <a class="footer__link" href="http://">Хвойные растения</a>
+              <a class="footer__link" href="http://">Декоративные деревья</a>
+              <a class="footer__link" href="http://">Декоративные кустарники</a>
+            </div>
+            <div class="footer__box">
+              <div class="footer__title">
+                ТОП Запросы
+                <span class="footer__show">
+                  <svg class="footer__show_icon">
+                    <use href="./img/icons.svg#icon_arrow-b"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__scrollbar">
+                <a class="footer__link" href="http://">Орехоплодные культуры</a>
+                <a class="footer__link" href="http://">Колоновидные культуры</a>
+                <a class="footer__link" href="http://">Плодовые культуры</a>
+                <a class="footer__link" href="http://">Ягодные культуры</a>
+                <a class="footer__link" href="http://">Комнатные растения</a>
+                <a class="footer__link" href="http://">Гортензия</a>
+                <a class="footer__link" href="http://">Цитрусовые растения</a>
+                <a class="footer__link" href="http://">Хвойные растения</a>
+                <a class="footer__link" href="http://">Декоративные деревья</a>
+                <a class="footer__link" href="http://"
+                  >Декоративные кустарники</a
+                >
+
+                <a class="footer__link" href="http://">Комнатные растения</a>
+                <a class="footer__link" href="http://">Гортензия</a>
+                <a class="footer__link" href="http://">Цитрусовые растения</a>
+                <a class="footer__link" href="http://">Хвойные растения</a>
+                <a class="footer__link" href="http://">Декоративные деревья</a>
+                <a class="footer__link" href="http://"
+                  >Декоративные кустарники</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script type="module" src="./js/index.js"></script> -->
+    <script type="module" src="./js/product_card.js"></script>
+  </body>
+</html>
